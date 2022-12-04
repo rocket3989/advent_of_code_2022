@@ -9,14 +9,13 @@ data = get_data(day=1, year=2022)
 
 curr = 0
 arr = []
-for line in data.split():
+for line in data.split('\n'):
     if line.strip() == '':
         arr.append(curr)
         curr = 0
 
     else:
         curr += int(line)
-    print(line)
 
 arr.sort()
 
